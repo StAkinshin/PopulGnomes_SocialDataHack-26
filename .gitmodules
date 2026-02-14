@@ -1,0 +1,3 @@
+[submodule "parser/2gis"]
+	path = parser/2gis
+	url = https://github.com/interlark/parser-2gis
