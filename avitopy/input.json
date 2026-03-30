@@ -1,0 +1,206 @@
+{
+  "queries": [
+    {
+      "query": "рабочий дом",
+      "type": "direct",
+      "expected_precision": "high",
+      "expected_recall": "high",
+      "priority": 1,
+      "description": "Базовый прямой запрос — основной термин рабочих домов"
+    },
+    {
+      "query": "трудовой приют",
+      "type": "direct",
+      "expected_precision": "high",
+      "expected_recall": "medium",
+      "priority": 1,
+      "description": "Альтернативное название рабочего дома"
+    },
+    {
+      "query": "разноробочий с проживанием",
+      "type": "direct",
+      "expected_precision": "high",
+      "expected_recall": "medium",
+      "priority": 1,
+      "description": "Устаревший термин, используемый частью объявлений"
+    },
+    {
+      "query": "рабочий дом работа",
+      "type": "direct",
+      "expected_precision": "high",
+      "expected_recall": "medium",
+      "priority": 2,
+      "description": "Прямой термин с уточнением контекста трудоустройства"
+    },
+    {
+      "query": "помощь людям в трудной ситуации работа",
+      "type": "target_audience",
+      "expected_precision": "medium",
+      "expected_recall": "high",
+      "priority": 1,
+      "description": "Ключевая формулировка из ~95% объявлений"
+    },
+    {
+      "query": "работа для бездомных",
+      "type": "target_audience",
+      "expected_precision": "high",
+      "expected_recall": "medium",
+      "priority": 2,
+      "description": "Прямое указание на целевую аудиторию"
+    },
+    {
+      "query": "бездомные работа проживание",
+      "type": "combined",
+      "expected_precision": "high",
+      "expected_recall": "medium",
+      "priority": 2,
+      "description": "Аудитория + система компенсации"
+    },
+    {
+      "query": "работа без документов проживание",
+      "type": "combined",
+      "expected_precision": "medium",
+      "expected_recall": "high",
+      "priority": 2,
+      "description": "Маркер уязвимой группы + жильё"
+    },
+    {
+      "query": "без документов работа питание",
+      "type": "combined",
+      "expected_precision": "medium",
+      "expected_recall": "medium",
+      "priority": 2,
+      "description": "Вариация порядка слов для расширения охвата"
+    },
+    {
+      "query": "освободившиеся работа жилье",
+      "type": "target_audience",
+      "expected_precision": "high",
+      "expected_recall": "low",
+      "priority": 2,
+      "description": "Специфичная аудитория — бывшие заключённые"
+    },
+    {
+      "query": "обманутые на вахте помощь",
+      "type": "target_audience",
+      "expected_precision": "high",
+      "expected_recall": "low",
+      "priority": 2,
+      "description": "Специфичная аудитория — обманутые вахтовики"
+    },
+    {
+      "query": "центр социальной адаптации работа",
+      "type": "target_audience",
+      "expected_precision": "medium",
+      "expected_recall": "medium",
+      "priority": 2,
+      "description": "Эвфемизм, часто используемый рабочими домами"
+    },
+    {
+      "query": "социальная адаптация трудоустройство",
+      "type": "target_audience",
+      "expected_precision": "medium",
+      "expected_recall": "medium",
+      "priority": 3,
+      "description": "Вариация формулировки социальной адаптации"
+    },
+    {
+      "query": "разнорабочие проживание питание",
+      "type": "combined",
+      "expected_precision": "medium",
+      "expected_recall": "high",
+      "priority": 2,
+      "description": "Тип работы + полная система компенсации"
+    },
+    {
+      "query": "подсобники бесплатное проживание",
+      "type": "combined",
+      "expected_precision": "medium",
+      "expected_recall": "medium",
+      "priority": 2,
+      "description": "Неквалифицированный труд + бесплатное жильё"
+    },
+    {
+      "query": "грузчики с проживанием питанием",
+      "type": "combined",
+      "expected_precision": "low",
+      "expected_recall": "medium",
+      "priority": 3,
+      "description": "Конкретная специальность + компенсация жильём и едой"
+    },
+    {
+      "query": "восстановление документов работа жилье",
+      "type": "combined",
+      "expected_precision": "high",
+      "expected_recall": "medium",
+      "priority": 2,
+      "description": "Характерная доп. услуга рабочих домов"
+    },
+    {
+      "query": "помощь в восстановлении документов работа",
+      "type": "combined",
+      "expected_precision": "high",
+      "expected_recall": "medium",
+      "priority": 2,
+      "description": "Вариация запроса по восстановлению документов"
+    },
+    {
+      "query": "койко-место работа",
+      "type": "compensation",
+      "expected_precision": "medium",
+      "expected_recall": "medium",
+      "priority": 3,
+      "description": "Специфичный маркер минимального жилья за труд"
+    },
+    {
+      "query": "трехразовое питание проживание работа",
+      "type": "compensation",
+      "expected_precision": "medium",
+      "expected_recall": "medium",
+      "priority": 3,
+      "description": "Детализированная система компенсации"
+    },
+    {
+      "query": "работа жилье питание бесплатно",
+      "type": "compensation",
+      "expected_precision": "low",
+      "expected_recall": "high",
+      "priority": 3,
+      "description": "Широкий запрос по бартерной компенсации — высокий recall, много шума"
+    },
+    {
+      "query": "трудная ситуация работа проживание",
+      "type": "combined",
+      "expected_precision": "medium",
+      "expected_recall": "medium",
+      "priority": 2,
+      "description": "Сокращённая формулировка целевой аудитории + жильё"
+    },
+    {
+      "query": "помощь людям без жилья работа",
+      "type": "target_audience",
+      "expected_precision": "medium",
+      "expected_recall": "medium",
+      "priority": 2,
+      "description": "Альтернативная формулировка для бездомных"
+    },
+    {
+      "query": "трудоустройство проживание питание бесплатно",
+      "type": "compensation",
+      "expected_precision": "medium",
+      "expected_recall": "medium",
+      "priority": 3,
+      "description": "Формальный термин трудоустройства + полная компенсация"
+    }
+  ],
+  "total_queries": 24,
+  "estimated_coverage": "85-95%",
+  "geographic_scope": "Вся Россия",
+  "query_distribution": {
+    "direct": 4,
+    "target_audience": 7,
+    "combined": 9,
+    "compensation": 4
+  },
+  "notes": "Набор оптимизирован для high recall с общероссийским охватом. Рекомендуется выполнять запросы в порядке priority: сначала 1, затем 2, затем 3. После первого прогона — удалить запросы с низкой эффективностью и добавить новые на основе найденных формулировок."
+}
